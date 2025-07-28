@@ -12,6 +12,30 @@ Fig. Comparison of GMDM with the Dubins paths. Left: horter-time path than Dubin
 </p>
 
 ## Usage
-Code is well-documented and header files should be self-explanatory. An example program is provided that reproduce the results in Figure 6 of the IEEE TRO published article. The GMDM C++ Library has no particular dependencies. The library was tested and evaluated in Ubuntu 22.04 LTS. A python script matplotlib and pandas dependencies is provided to visualize the GMDM paths.
+Code is well-documented and header files should be self-explanatory. An example program is provided that reproduces the results in Figure 6 of the IEEE TRO published article. The GMDM C++ Library has no particular dependencies. A CMakeLists.txt file and some build scripts are provided for convenience. The library was tested and evaluated in Ubuntu 22.04 LTS. A python script matplotlib and pandas dependencies is provided to visualize the GMDM paths.
 
 ### Instructions
+- Run `./build_debug.sh` to build a debug version, or `./build_release.sh` to build a release version.
+- Run `./run.sh` to run the C++ and python programs in sequence.
+- Run `./clean.sh` to remove generated files and folders from building and running.
+
+## Citation
+If you use the results presented in this paper or the code from this repository, please cite the following:
+```
+@ARTICLE{10938343,
+  author={Wilson, James P. and Gupta, Shalabh and Wettergren, Thomas A.},
+  journal={IEEE Transactions on Robotics}, 
+  title={Generalized Multispeed Dubins Motion Model}, 
+  year={2025},
+  volume={41},
+  number={},
+  pages={2861-2878},
+  doi={10.1109/TRO.2025.3554436}}
+```
+Please kindly star :star: this project if it helps you!
+
+## License
+[MIT](LICENSE) (C) Links Lab UConn
+
+## Contact
+James P. Wilson (james.wilson@uconn.edu)
