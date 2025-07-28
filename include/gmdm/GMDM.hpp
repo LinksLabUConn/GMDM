@@ -179,6 +179,9 @@ namespace gmdm
 
         /* @brief Helper function. computes the state on the GMDM path at normalized "time" t, where t is between 0 and 1
          * Note: t=0 means return the start pose, t=1 returns the goal pose, and t=0.5 returns the midpoint state along the path
+         * I expect that nomially, this function will only be called as a subroutine for the interpolate_path function with signature 
+         * "std::vector<GMDMState> interpolate_path(const GMDMPath &path)"
+         * If you really just one state along the path, and do not want to interpolate along the entire path, set "interpolated_once = false" and pass some dummy variables for p1 and p2.
          */
         GMDMState interpolate_path(const GMDMPath &path, double t, bool &interpolated_once, PoseSE2 &p1, PoseSE2 &p2);
 
