@@ -1,4 +1,4 @@
-# GMDM: Generalized Multi-Speed Dubins Motion Model
+# GMDM: Generalized Multi-Speed Dubins Motion Model C++ Library
 
 This code implements a novel motion model, called Generalized Multi-Speed Dubins Motion Model (GMDM), which extends the Dubins model by considering multiple speeds. While the Dubins model produces time-optimal paths under a constant-speed constraint, these paths could be suboptimal if this constraint is relaxed to include multiple speeds. This is because a constant speed results in a large minimum turning radius, thus producing paths with longer maneuvers and larger travel times. In contrast, multi-speed relaxation allows for slower speed sharp turns, thus producing more direct paths with shorter maneuvers and smaller travel times. Furthermore, the inability of the Dubins model to reduce speed could result in fast maneuvers near obstacles, thus producing paths with high collision risks. 
 
