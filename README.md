@@ -35,7 +35,7 @@ If you use the results presented in this paper or the code from this repository,
 Please kindly star :star: this project if it helps you!
 
 ## License
-[MIT](LICENSE) (C) Links Lab UConn
+[MIT](LICENSE) © Links Lab UConn
 
 ## Contact
 James P. Wilson (james.wilson@uconn.edu)
