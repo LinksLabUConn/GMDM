@@ -11,7 +11,7 @@ In this regard, GMDM provides the motion planners the ability to jointly optimiz
 Fig. Comparison of GMDM with the Dubins paths. Left: horter-time path than Dubins in obstacle-free environments. Right: Safer path than Dubins in obstacle-rich environments.
 </p>
 
-# Usage
+## Usage
 Code is well-documented and header files should be self-explanatory. An example program is provided that reproduce the results in Figure 6 of the IEEE TRO published article. The GMDM C++ Library has no particular dependencies. The library was tested and evaluated in Ubuntu 22.04 LTS. A python script matplotlib and pandas dependencies is provided to visualize the GMDM paths.
 
-## Instructions
+### Instructions
