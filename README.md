@@ -1,4 +1,3 @@
-# GMDM
-Generalized Multispeed Dubins Motion Model
+# GMDM: Generalized Multispeed Dubins Motion Model
 
 Coming soon!
