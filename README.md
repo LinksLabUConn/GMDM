@@ -7,3 +7,6 @@ In this regard, GMDM provides the motion planners the ability to jointly optimiz
 <p align="center">
   <img src="figs/figure1.png" height = "255"/>
 </p>
+<p align="center">
+Fig. Comparison of GMDM with the Dubins paths. Left: horter-time path than Dubins in obstacle-free environments. Right: Safer path than Dubins in obstacle-rich environments.
+</p>
