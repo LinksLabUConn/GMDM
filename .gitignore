@@ -1,0 +1,9 @@
+.vscode/
+bin/
+build/
+results/
+clean.sh
+build_debug.sh
+build_release.sh
+run.sh
+TODO
