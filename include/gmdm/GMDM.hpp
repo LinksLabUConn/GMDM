@@ -177,6 +177,14 @@ namespace gmdm
         /* @brief determines if a particular GMDMPath is valid */
         int determine_path_type(const GMDMPath &path);
 
+        /* @brief Helper function. computes the state on the GMDM path at normalized "time" t, where t is between 0 and 1
+         * Note: t=0 means return the start pose, t=1 returns the goal pose, and t=0.5 returns the midpoint state along the path
+         */
+        GMDMState interpolate_path(const GMDMPath &path, double t, bool &interpolated_once, PoseSE2 &p1, PoseSE2 &p2);
+
+        /* @brief helper function to interpolate along a motion primitive */
+        PoseSE2 motion_primitive(const PoseSE2 &p, const GMDMSegment &seg, double t);
+
         /* @brief returns the set of states interlopated along a gmdm path specified by time stampes in vector t
          * each element of t must be between 0 and 1. The function does not check if the elements in t are in order.
          */
@@ -278,14 +286,6 @@ namespace gmdm
 
         /* @brief returns -1 if val < 0, +1 if val >0, and 0 if val = 0*/
         int sgn(double val);
-
-        /* @brief Helper function. computes the state on the GMDM path at normalized "time" t, where t is between 0 and 1
-         * Note: t=0 means return the start pose, t=1 returns the goal pose, and t=0.5 returns the midpoint state along the path
-         */
-        GMDMState interpolate_path(const GMDMPath &path, double t, bool &interpolated_once, PoseSE2 &p1, PoseSE2 &p2);
-
-        /* @brief helper function to interpolate along a motion primitive */
-        PoseSE2 motion_primitive(const PoseSE2 &p, const GMDMSegment &seg, double t);
 
         /* @brief a helper function to create a normalized time vector. used for interpolating states. */
         std::vector<double> create_time_vector(double travel_time);
