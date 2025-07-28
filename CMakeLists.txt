@@ -13,7 +13,7 @@ set(EXECUTABLE_NAME "gmdm")
 
 file(GLOB_RECURSE SOURCE_FILES "src/*.cpp")
 
-add_executable(${EXECUTABLE_NAME} main_figure6.cpp ${SOURCE_FILES})
+add_executable(${EXECUTABLE_NAME} src/main_figure6.cpp ${SOURCE_FILES})
 
 target_include_directories(${EXECUTABLE_NAME} PUBLIC include)
 
